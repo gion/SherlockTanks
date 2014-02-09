@@ -1,0 +1,88 @@
+<div class="world"><!-- Game world, setup your entities here -->
+	<!-- Hero unit -->
+	<div fm-hero
+		name="Holmes"
+		hit-points="200"
+		damage="60"
+		speed="2"
+		x="80"
+		y="500"></div>
+	<!-- Enemy instances -->
+ 	<div fm-enemy
+		name="Irene"
+		hit-points="600"
+		damage="5"
+		speed="1"
+		x="600"
+		y="300"></div>
+	<div fm-enemy
+		name="Mycroft"
+		hit-points="600"
+		damage="5"
+		speed="1"
+		x="800"
+		y="600"></div> 
+	<div fm-enemy
+		name="Watson"
+		hit-points="600"
+		damage="5"
+		speed="1"
+		x="450"
+		y="100"></div> 
+	<!-- Level boss -->
+	<div fm-boss
+		name="J.M."
+		hit-points="1200"
+		damage="300"
+		speed="2"
+		x="900"
+		y="60"></div>
+	<!-- Obstacles -->
+	<div fm-obstacle
+		class="small square"
+		x="-82"
+		y="330"></div>
+	<div fm-obstacle
+		class="small square"
+		x="-82"
+		y="430"></div>
+	<div fm-obstacle
+		class="small square"
+		x="-82"
+		y="530"></div>
+	<div fm-obstacle
+		class="large square"
+		x="550"
+		y="280"></div>
+	<div fm-obstacle
+		class="large horizontal"
+		x="0"
+		y="600"></div>
+	<div fm-moving-obstacle
+		class="small horizontal"
+		x="280"
+		distance="200"
+		time="4"
+		y="300"></div>
+	<div fm-obstacle
+		class="small horizontal"
+		x="400"
+		y="300"></div>
+	<div fm-obstacle
+		class="large horizontal"
+		x="680"
+		y="270"></div>
+	<div fm-obstacle
+		class="large square"
+		x="880"
+		y="250"></div>
+	<div fm-obstacle
+		class="small horizontal"
+		x="650"
+		y="450"></div>
+	<div fm-obstacle
+		class="small square"
+		x="930"
+		y="600"></div>
+
+</div>

@@ -1,0 +1,10 @@
+<div
+	class="enemy character"
+	health="{{settings.hitPoints}}"
+	ng-class="{'reverse':settings.direction!=1}"
+	ng-hide="settings.collect"
+	ng-style="{
+		'left':settings.x+'px',
+		'top':settings.y+'px' 
+	}"
+</div>

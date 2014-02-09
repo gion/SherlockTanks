@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html
+	xmlns:ng="http://angularjs.org"
+	xmlns:og="http://ogp.me/ns#"
+	ng-app="game"
+	ng-controller="GameController"
+	id="ng-app">
+	<head>
+		<meta http-equiv='content-type'	content='text/html;charset=utf-8'>
+		<meta name='copyright'			content=''>
+		<meta name='description'		content=''>
+		<meta name='keywords'			content=''>
+		<meta name='author'				content=''>
+		<!-- OpenGraph Meta-->
+		<meta property='og:locale'		content='en_US'/>
+		<meta property='og:type'		content='website'/>
+		<meta property='og:title'		content=''/>
+		<meta property='og:description'	content=''/>
+		<meta property='og:image'		content=''/>
+		<meta property='og:url'			content=''/>
+		<meta property='og:site_name'	content=''/>
+		<meta name='viewport'			content='width=1024,height=600'>
+		<link rel='canonical'			href=''/>
+		
+		<title>Sherlock Tanks</title>
+		<link rel="stylesheet" href="./style.css">
+
+		<script>
+			if (!(window.console && console.log)) {
+				(function() {
+					var noop = function() {};
+					var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn'];
+					var length = methods.length;
+					var console = window.console = {};
+					while (length--) {
+						console[methods[length]] = noop;
+					}
+				}());
+			}
+		</script>
+		<!-- Libraries -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.8/angular.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.8/angular-route.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/keyboardjs/0.4.2/keyboard.js"></script>
+		<!-- Game classes: Logic & processing for all game entities -->
+		<script src="js/game/classes/World.js"></script>
+		<script src="js/game/classes/Entity.js"></script>
+		<script src="js/game/classes/Obstacle.js"></script>
+		<script src="js/game/classes/Character.js"></script>
+		<script src="js/game/classes/Hero.js"></script>
+		<script src="js/game/classes/Enemy.js"></script>
+		<script src="js/game/classes/Boss.js"></script>
+		<!-- Application -->
+		<script src="js/game/Game.js"></script>
+		<!-- Controllers -->
+		<script src="js/game/controllers/GameController.js"></script>
+		<!-- Services -->
+		<script src="js/game/services/LoopService.js"></script>
+		<!-- Directives: these will bind the Class logic to what's on the screen -->
+		<script src="js/game/directives/fmWorld.js"></script>
+		<script src="js/game/directives/fmEnemy.js"></script>
+		<script src="js/game/directives/fmBoss.js"></script>
+		<script src="js/game/directives/fmHero.js"></script>
+		<script src="js/game/directives/fmObstacle.js"></script>
+		<script src="js/game/directives/fmMovingObstacle.js"></script>
+	</head>
+	<body>
+		<main>
+			<div fm-world></div>
+		</main>
+		<header>
+			
+		</header>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
