@@ -20,7 +20,7 @@ Hero.prototype.jump = function(){
 	if(this.canJump == true && this.jumping==false){
 		this.canJump = false;
 		this.jumping = true;
-		this.speed = 4;
+		this.speed = 3;
 		setTimeout(function(){
 			entity.speed = currentSpeed;
 			entity.jumping = false;
@@ -57,7 +57,7 @@ Hero.prototype.update = function(vector, ground){
 		this.velocity.y = 0;
 	} else {
 		this.velocity.y = -vector.y;
-		this.velocity.y -= 10;
+		this.velocity.y -= 6;
 	}
 }
 
