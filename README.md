@@ -16,7 +16,7 @@ Your target is to eliminate all four enemies.
 Controls
 -------------
 * Left, Right: Move
-* Up: Jump (obviously, these are very versatile tanks)
+* Up: Jump (obviously, these are quite versatile tanks)
 * Space: Shoot
 
 About the code
@@ -24,3 +24,7 @@ About the code
 * js/game/services/LoopService.js: Handles game update frequency & functions
 * js/game/directives and assets/templates: Directives and their templates connect the classes logic to what's shown on the screen
 * js/game/classes: Files here contain the logic for all game world related aspects, including collision detection (World.js) and Entity behavior (Entity.js, Character.js, Hero.js, Boss.js)
+
+Finally
+------------
+Enjoy!
