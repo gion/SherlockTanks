@@ -46,6 +46,18 @@ World.collide = function(entity){
 
 		// TODO: use Box2D to handle collisions
 		var collision = World.detectCollision(entity,this.entities[i]);
+		if(entity.x<0){
+			entity.x = 0;
+			if(entity instanceof Enemy){
+				entity.direction = -entity.direction;
+			}
+		}
+		if(entity.x>this.width){
+			entity.x = this.width-entity.width;
+			if(entity instanceof Enemy){
+				entity.direction = -entity.direction;
+			}
+		}
 		// Handle collision reactions
 		if(collision.touch == true){
 
