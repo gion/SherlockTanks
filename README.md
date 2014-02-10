@@ -23,7 +23,7 @@ About the code
 -------------
 * js/game/services/LoopService.js: Handles game update frequency & functions
 * js/game/directives and assets/templates: Directives and their templates connect the classes logic to what's shown on the screen
-* js/game/classes: Files here contain the logic for all game world related aspects, including collision detection (World.js) and Entity behavior (Entity.js, Character.js, Hero.js, Boss.js)
+* js/game/classes: Files here contain the logic for all game world related aspects, including collision detection (World.js) and Entity behavior (Character.js, Hero.js, Boss.js, etc)
 
 Finally
 ------------
