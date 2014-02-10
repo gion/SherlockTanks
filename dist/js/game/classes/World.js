@@ -44,20 +44,23 @@ World.collide = function(entity){
 			}
 		}
 
-		// TODO: use Box2D to handle collisions
-		var collision = World.detectCollision(entity,this.entities[i]);
-		if(entity.x<0){
+		// Does it collide with the world walls?
+		if(entity.x < 0){
 			entity.x = 0;
 			if(entity instanceof Enemy){
 				entity.direction = -entity.direction;
 			}
 		}
-		if(entity.x>this.width){
+		if(entity.x+entity.width > this.width){
 			entity.x = this.width-entity.width;
 			if(entity instanceof Enemy){
 				entity.direction = -entity.direction;
 			}
 		}
+
+		// TODO: use Box2D to handle collisions
+		var collision = World.detectCollision(entity,this.entities[i]);
+
 		// Handle collision reactions
 		if(collision.touch == true){
 
